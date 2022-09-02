@@ -2,7 +2,7 @@
 #include "Wagon.h"
 
 int main(){
-    Wagon w1;
+    Wagon *w1 = new Wagon();
     
     Capybara* array_of_capybaras = new Capybara[5];
     int age[5] = {1,2,3,4,5};
@@ -11,9 +11,8 @@ int main(){
         (array_of_capybaras + i)-> setName(name[i]);
         (array_of_capybaras + i)-> setAge(age[i]);
     }
+
     for(int j = 0; j< 5;j++){
-        if (w1.addCapybara(array_of_capybaras[j]) == false){
-            std :: cout << "The wagon is full" << std :: endl;
-        }
+        w1 ->addCapybara(*(array_of_capybaras+j));
     }
 }

@@ -1,12 +1,14 @@
 #pragma once
+#include <iostream>
+#include <vector>
 #include "Capybara.h"
-class Wagon{
+
+class Wagon {
     private:
         int wagon_size = 4;
-        int cnt_seat = 0;
-        Capybara* Capybara_records;
+        std :: vector<Capybara> Capybara_record;
     public:
-    Wagon();
+    Wagon(){};
     bool addCapybara(Capybara newCapy);
     void emptyWagon();
     void printCapybaras();
