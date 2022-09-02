@@ -24,12 +24,7 @@ void Wagon :: emptyWagon(){
 
 void Wagon ::printCapybaras(){
     for(int i = 0; i < cnt_seat; i++){
-        if (i+1 > wagon_size){
-            std :: cout << "oops cannot add capybara:" <<  (Capybara_records + i) ->getName()<<" of age " << (Capybara_records + i) -> getAge() << std :: endl;
-        }else{
-            std:: cout << (Capybara_records + i) ->getName() << " " <<(Capybara_records + i) -> getAge() << std :: endl;
-        }
-        
+        std:: cout << (Capybara_records + i) ->getName() << " " <<(Capybara_records + i) -> getAge() << std :: endl;
     }
 
 
