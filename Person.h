@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PERSON_H
+#define PERSON_H
 #include <string>
 class Person{
     private:
@@ -11,3 +12,4 @@ class Person{
     std :: string getName();
     int getSalary();
 };
+#endif

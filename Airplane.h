@@ -1,4 +1,5 @@
-#pragma once
+#ifndef AIRPLANE_H
+#define AIRPLANE_H
 #include <string>
 #include "Person.h"
 class Airplane{
@@ -15,3 +16,4 @@ class Airplane{
     Person getCoPilot();
     void printDetails();
 };
+#endif
