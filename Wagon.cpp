@@ -21,6 +21,8 @@ bool Wagon :: addCapybara(Capybara newCapy){
 
 void Wagon :: emptyWagon(){
     cnt_seat = 0;
+    delete [] Capybara_records;
+    Capybara_records = new Capybara[wagon_size];
 }
 
 void Wagon ::printCapybaras(){
