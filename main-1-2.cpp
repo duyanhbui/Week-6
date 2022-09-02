@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Person.cpp"
+#include "Person.h"
 
 int main(){
     Person* array_of_person = new Person[5];

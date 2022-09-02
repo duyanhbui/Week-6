@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Capybara.cpp"
+#include "Capybara.h"
 
 int main(){
     Capybara* array_of_capybaras = new Capybara[4];

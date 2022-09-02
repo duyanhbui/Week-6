@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Capybara.h"
 #include "Wagon.h"
 Wagon :: Wagon(){
     Capybara_records = new Capybara[wagon_size];

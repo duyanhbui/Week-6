@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Airplane.h"
+#include "Person.h"
 Airplane :: Airplane(std :: string callsign, Person thePilot, Person theCoPilot){
     call_sign = callsign;
     Pilot = thePilot;
