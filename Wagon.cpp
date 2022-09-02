@@ -10,11 +10,8 @@ bool Wagon :: addCapybara(Capybara newCapy){
     }else{
         cnt_seat += 1;
         *(Capybara_records + cnt_seat -1) = newCapy;
-        if (cnt_seat == wagon_size){
-            return false;
-        }else{
-            return true;
-        }
+        return true;
+        
         
     }
 }
@@ -26,7 +23,10 @@ void Wagon :: emptyWagon(){
 }
 
 void Wagon ::printCapybaras(){
-    for(int i = 0; i < cnt_seat; i++){
-        std:: cout << (Capybara_records + i) ->getName() << " " <<(Capybara_records + i) -> getAge() << std :: endl;
+    if (cnt_seat > 0){
+        for(int i = 0; i < cnt_seat; i++){
+            std:: cout << (Capybara_records + i) ->getName() << " " <<(Capybara_records + i) -> getAge() << std :: endl;
     }
+    }
+
 }
