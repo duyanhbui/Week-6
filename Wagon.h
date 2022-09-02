@@ -1,4 +1,5 @@
 #pragma once
+#include "Capybara.h"
 class Wagon{
     private:
         int wagon_size = 5;

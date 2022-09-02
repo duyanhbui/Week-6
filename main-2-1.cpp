@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Wagon.h"
-#include "Capybara.h"
 
 int main(){
     Wagon w1;

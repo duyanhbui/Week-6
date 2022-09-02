@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Person.h"
 class Airplane{
     private:
         std :: string call_sign;
